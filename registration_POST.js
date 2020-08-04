@@ -50,7 +50,7 @@ else{
     if(res==1)
     {
       alert("Registration success!");
-
+      window.location.href ="login.php";
     }
     else{
 
