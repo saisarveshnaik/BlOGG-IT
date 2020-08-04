@@ -22,7 +22,7 @@ if($sql->rowCount()>0){
 
 	$_SESSION["email"] = $row['user_email'];
     $_SESSION["user_name"] = $row['user_name'];
-    
+    $_SESSION["username"] = $row['username'];
 	$_SESSION["password1"] = $row['password'];
 	
 	$_SESSION["type_id"] = $row['user_type'];
