@@ -46,7 +46,7 @@ require "session_script.php";
     <?php
               
                if (isset($_SESSION['user_name'])) {
-                 echo '<img class="img-circle profile_img" width="200px" src="'.$_SESSION["profile_pic"].'" alt="images/profile.png">';
+                 echo '<img class="img-circle profile_img" width="200px" src="'.$_SESSION["profile_pic"].'">';
 echo 'Hi '.$_SESSION["user_name"].' | <button class="btn btn-outline-default"><a href="logout.php" style="color:black">LOGOUT </a></button>';
 
                }
