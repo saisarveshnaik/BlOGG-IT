@@ -1,12 +1,62 @@
 .margin-left{
-    margin-left: 10px !important;
+    margin-left: 12px !important;
 
 }
 
-.navbar{
-	margin-left: 100px !important;
+#jumbotron{
+
+  margin-left: 400px ;
+  margin-right: 200px;
 }
+
+#sidebartext{
+	color : white;
+}
+
+
 
 .form-navbar{
-	margin-right: 100px !important
+	margin-right: 190px !important
 }
+
+
+body {
+  background-image: url('images/solid.png');
+  background-attachment: fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+  margin-top: 20%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.blogTextarea{
+	height: 450px;
+  resize: none;
+}
+
+
+#formsubmit{
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+
+
+
+
+.blogButtons{
+  height: 50%;
+  width: 100%;
+
+}
+
