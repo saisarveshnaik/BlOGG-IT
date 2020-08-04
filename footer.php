@@ -1,4 +1,12 @@
-<!-- Footer -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-1"></div>
+
+
+
+    <div class="col-md-10">
+
+      <!-- Footer -->
 <footer class="page-footer font-small mdb-color lighten-3 pt-4">
 
   <!-- Footer Links -->
@@ -122,3 +130,15 @@
 
 </footer>
 <!-- Footer -->
+
+    </div>
+
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
+
+
+
+
+
