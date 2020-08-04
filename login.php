@@ -24,11 +24,11 @@
 
 
 
-  <div class="container" style="margin-top: 100px;">
+  <div class="container" style="margin-top: 2%;">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3"></div>
 
-      </div>
+
       <div class="col-md-6">
         <h4 class="mb-4" align="center" style="color: white" >LOGIN TO YOUR ACCOUNT</h4>
         <div class="form-group">
@@ -40,9 +40,9 @@
           <input type="password" id="pass" class="form-control" placeholder="Your password">
         </div> 
       </div>
-      <div class="col-md-3">
 
-      </div>
+
+      <div class="col-md-3"></div>
     </div>
 
     <div class="row">
