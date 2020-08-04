@@ -3,24 +3,64 @@
 <head>
 	<title>Blogging</title>
 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="sidebar.css">
+
+	
+
+
 
 </head>
 <body>
 
-<?php
-include 'header.php';
-?>
+	<?php
+	require 'header.php';
+	?>
+
+	<?php
+	require 'sidebar.php';
+	?>
+
+
+
+    
+<div class="jumbotron p-0" id="jumbotron">
+
+  
+  <div class="view overlay rounded-top">
+    <img src="" class="img-fluid" alt="Sample image">
+    <a href="#">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  
+  <div class="card-body text-center mb-3">
+
+   
+    <h3 class="card-title h3 my-4"><strong>Card title</strong></h3>
+   
+    <p class="card-text py-2">Some quick example text to build on the card title and make up the bulk of the card's</p>
+   
+    <a href="#" class="btn btn-primary">Button</a>
+
+  </div>
+
+</div>
 
 
 
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<?php
+	require 'footer.php';
+	?>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
