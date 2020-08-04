@@ -37,30 +37,24 @@
 
 
 						<div class="form-group">
-							<input type="text" class="form-control" id="fname" placeholder="Your First Name">
+							<input type="text" class="form-control" id="user_name" placeholder="Your Name">
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" id="mname" placeholder="Your Middle Name">
+							<input type="text" class="form-control" id="user_address" placeholder="Your Address">
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" id="lname" placeholder="Your Last Name">
+							<input type="number" class="form-control" id="user_cont" placeholder="Your Contact Number">
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" id="email" placeholder="Your Email">
+							<input type="text" class="form-control" id="user_email" placeholder="Your Email">
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" id="designation" placeholder="Your Designation">
+							<input type="text" class="form-control" id="username" placeholder="Create Unique Username">
 						</div>
 						<div class="form-group">
 							<input type="password" class="form-control" id="password" placeholder="Your Password">
 						</div>
 						
-
-
-						<div class="form-group">
-							<input type="number" class="form-control" id="contact_no" placeholder="Your contact no">
-						</div>
-
 
 
 
@@ -76,7 +70,7 @@
 
 
 							<div class="col-md-3 col-sm-3 ">
-								<input type="file" id="profile_picture" name="file" />
+								<input type="file" id="profile_pic" name="file" />
 
 							</div>
 							<div class='preview col-md-12'>
@@ -95,57 +89,53 @@
 							<input type="radio" id="gender" value="female"> Female<br>
 						</div>
 
-						<div class="form-group">
-							<textarea  cols="30" rows="7" id="messages" class="form-control" placeholder="Message"></textarea>
-						</div>
-						<div class="form-group">
 
-							<button type="button" id="formsubmit" class="btn btn-primary py-3 px-5">REGISTER</button>
-						</div>
-
-
+						<button type="button" id="formsubmit" class="btn btn-primary py-3 px-5">REGISTER</button>
 					</div>
 
+
 				</div>
-			</form>
-		</div>
-	</section>
+
+			</div>
+		</form>
+	</div>
+</section>
 
 
-	<?php
-	require 'footer.php';
-	?>
+<?php
+require 'footer.php';
+?>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 
-	<script type="text/javascript" src="registration_POST.js"></script>
-	<script>
-		$('#profile_picture').change(function(){
+<script type="text/javascript" src="registration_POST.js"></script>
+<script>
+	$('#profile_pic').change(function(){
 
-			var fd = new FormData();
-			var files = $('#profile_picture')[0].files[0];
-			fd.append('file',files);
+		var fd = new FormData();
+		var files = $('#profile_pic')[0].files[0];
+		fd.append('file',files);
 
-			$.ajax({
-				url: 'upload.php',
-				type: 'post',
-				data: fd,
-				contentType: false,
-				processData: false,
-				success: function(response){
-					if(response != 0){
-						$("#img").attr("src",response); 
-						$('#image1').val(response);
+		$.ajax({
+			url: 'upload.php',
+			type: 'post',
+			data: fd,
+			contentType: false,
+			processData: false,
+			success: function(response){
+				if(response != 0){
+					$("#img").attr("src",response); 
+					$('#image1').val(response);
                     $(".preview img").show(); // Display image element
                 }else{
                 	alert('file not uploaded');
                 }
             },
         });
-		});
+	});
 
-	</script>
+</script>
 </body>
 </html>
