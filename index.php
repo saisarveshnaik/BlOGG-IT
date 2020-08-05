@@ -26,8 +26,46 @@
 
 
 
+<?php
+require 'connect.php';
+
+
+$sql= $conn->prepare("SELECT * FROM blogs order by created_date_time DESC");
+            $sql->execute();
+            $sql->setFetchMode(PDO::FETCH_ASSOC);
+            if($sql->rowCount()>0){
+              foreach (($sql->fetchAll()) as $key => $row) {
+
+              	echo '<div class="jumbotron p-0 roundShadow" id="jumbotron">
+
+  
+  <div class="view overlay rounded-top">
+    <img src="'.$row['blog_pic'].'" id="blog_image" class="img-fluid" alt="Blog image">
+    <a href="#">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  
+  <div class="card-body text-center mb-3">
+
+   
+    <h3 class="card-title h3 my-4"><strong>'.$row['blog_title'].'</strong></h3>
+   
+    <p class="card-text py-2">'.$row['blog_desc'].'</p>
+   
+    <a href="#" class="btn btn-primary">Button</a>
+
+  </div>
+
+</div>';
+
+              }
+          }
+?>
+
     
-<div class="jumbotron p-0" id="jumbotron">
+<!-- <div class="jumbotron p-0" id="jumbotron">
 
   
   <div class="view overlay rounded-top">
@@ -49,7 +87,7 @@
 
   </div>
 
-</div>
+</div> -->
 
 
 
