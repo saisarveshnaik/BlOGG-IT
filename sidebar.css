@@ -13,11 +13,10 @@
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    opacity: 0.6;
+    opacity: 0.9;
     left: 250px;
     width: 0;
-    height: 100%;
-    margin-left: -250px;
+    height: 85%;
     overflow-y: auto;
     background: #343a40;   /*SIDEBAR COLOR*/
     -webkit-transition: all 0.5s ease;
