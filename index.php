@@ -26,11 +26,15 @@
 
 
 
+
+
+<div class="container">
+ <div class="row">
+ 	<div class="col-md-1"></div>
+ 	<div class="col-md-11">
+
 <?php
 require 'connect.php';
-
-
-
 $sql= $conn->prepare("SELECT * FROM blogs order by created_date_time DESC");
             $sql->execute();
             $sql->setFetchMode(PDO::FETCH_ASSOC);
@@ -48,19 +52,21 @@ $sql= $conn->prepare("SELECT * FROM blogs order by created_date_time DESC");
   </div>
 
   
-  <div class="card-body text-center mb-3">
+  <div class="card-body text-left mb-3">
 
    
     <h3 class="card-title h3 my-4"><strong>'.$row['blog_title'].'</strong></h3>
     <p style="font-size:18px;text-align:left;">'.$row['blog_desc'].'</p>
 
     <div class="row">
-     <div class="col-md-9">
-     <input  class="form-control" type="" id="comment_text" name="" placeholder="Leave a comment...." align="center">  
+     <div class="col-md-7">
+     <input  class="form-control" type="" id="comment_text" name="" placeholder="Leave a comment....">  
      </div>
-     <div class="col-md-3">
+     <div class="col-md-5">
+     <div class="btn-group">
      <button type="button" class="btn btn-success" style="margin-right:10px;">Comment</button>
      <a href="#" class="btn btn-primary">Read More</a>
+     </div>
      </div>
     </div>
 
@@ -76,6 +82,13 @@ $sql= $conn->prepare("SELECT * FROM blogs order by created_date_time DESC");
               }
           }
 ?>
+
+
+</div>
+ </div>	
+
+</div>
+
 
     
 <!-- <div class="jumbotron p-0" id="jumbotron">
