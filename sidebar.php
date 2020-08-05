@@ -1,19 +1,36 @@
-<div id="wrapper">
+<div id="wrapper" class="roundBorder">
 
     <!-- Sidebar -->
-    <div style="margin-left:-200px" id="sidebar-wrapper">
+
+    <div style="margin-left:-220px;" id="sidebar-wrapper" >
         <ul class="sidebar-nav">
-            <li class="sidebar-brand">
+            <!-- <li class="sidebar-brand">
                 <a style="color: white" href="#">
                     PROFILE
                 </a>
 
 
-
-               
+          
 
               
-           </li>
+           </li> -->
+           
+            <?php
+              
+               if (isset($_SESSION['user_name'])) {
+                 echo '<div style="margin-top:10%;">
+                 <img id="profile" src="'.$_SESSION["profile_pic"].'">
+
+                 </div>';
+             }
+             else
+             {
+                echo "";
+
+             }
+             ?>
+                  
+           <br>
            <li>
             <a style="color: white" href="#">DASHBOARD</a>
         </li>
