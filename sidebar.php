@@ -38,7 +38,7 @@
             <a style="color: white" href="add_blogs.php">ADD BLOGS</a>
         </li>
         <li>
-            <a style="color: white" href="#">VIEW BLOGS</a>
+            <a style="color: white" href="view_blogs.php">VIEW BLOGS</a>
         </li>
         <li>
             <a style="color: white" href="#">EVENTS</a>
