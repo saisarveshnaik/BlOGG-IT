@@ -48,7 +48,7 @@ else{
     else{
 
 
-     alert("error");
+     alert("Please login to post a blog");
 
 
    }
