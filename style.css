@@ -7,6 +7,7 @@
 
   margin-left: 400px ;
   margin-right: 200px;
+
 }
 
 #sidebartext{
@@ -60,3 +61,37 @@ footer{
 
 }
 
+
+#profile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#blog_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 100%%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1%;
+}
+
+
+.roundBorder{
+  border-radius: 2%;
+}
+
+
+.roundShadow{
+  border-radius: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
