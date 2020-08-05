@@ -2,7 +2,7 @@
 
     <!-- Sidebar -->
 
-    <div style="margin-left:-10%;" id="sidebar-wrapper" >
+    <div style="margin-left:-190px;" id="sidebar-wrapper" >
         <ul class="sidebar-nav">
             <!-- <li class="sidebar-brand">
                 <a style="color: white" href="#">
