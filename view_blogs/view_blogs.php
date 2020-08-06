@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Blogging</title>
+  <title>Blogging</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
-	<link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
 
-	<link rel="stylesheet" type="text/css" href="../sidebar.css">
+  <link rel="stylesheet" type="text/css" href="../sidebar.css">
 
-	
+  
 
 </head>
 <body>
 
-	<?php
-	require '../header.php';
-	?>
+  <?php
+  require '../header.php';
+  ?>
 
-	<?php
-	require '../sidebar.php';
-	?>
+  <?php
+  require '../sidebar.php';
+  ?>
 
 
 
@@ -28,8 +28,8 @@
 
 <div class="container">
  <div class="row">
- 	<div class="col-md-1"></div>
- 	<div class="col-md-11">
+  <div class="col-md-1"></div>
+  <div class="col-md-11">
 
 <?php
 require '../connect.php';
@@ -39,7 +39,7 @@ $sql= $conn->prepare("SELECT * FROM blogs where user_id='".$_SESSION['user_id'].
             if($sql->rowCount()>0){
               foreach (($sql->fetchAll()) as $key => $row) {
 
-              	echo '<div class="jumbotron p-0 roundShadow" id="jumbotron">
+                echo '<div class="jumbotron p-0 roundShadow" id="jumbotron">
 
   
   <div class="view overlay rounded-top">
@@ -68,7 +68,7 @@ $sql= $conn->prepare("SELECT * FROM blogs where user_id='".$_SESSION['user_id'].
 
 
 </div>
- </div>	
+ </div> 
 
 </div>
 
@@ -76,13 +76,13 @@ $sql= $conn->prepare("SELECT * FROM blogs where user_id='".$_SESSION['user_id'].
 
 
 
-	<?php
-	require '../footer.php';
-	?>
+  <?php
+  require '../footer.php';
+  ?>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	
-	<script src="../js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <script src="../js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
   

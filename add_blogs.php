@@ -68,11 +68,15 @@
 						</div>
 
 						<div class="item form-group">
-							<input type="text"  required="required" class="form-control " id="blog_title" name="productname" placeholder="Blog Title">
+							<input type="text"  required="required" class="form-control " id="blog_title" name="blog_title" placeholder="Blog Title">
 						</div>
 
 						<div class="item form-group">
-							<textarea class="form-control blogTextarea" type="text" name="productnote"  id="blog_desc" placeholder="Blog Description" ></textarea>
+							<input type="text"  required="required" class="form-control " id="blog_short_desc" name="blog_short_desc" placeholder="Short Description of the blog">
+						</div>
+
+						<div class="item form-group">
+							<textarea class="form-control blogTextarea" type="text" name="blog_desc"  id="blog_desc" placeholder="Blog Description"></textarea>
 						</div>
 
 

@@ -43,7 +43,7 @@ error_reporting(0);
             <a style="color: white" href="add_blogs.php">ADD BLOGS</a>
         </li>
         <li>
-            <a style="color: white" href="#">VIEW BLOGS</a>
+            <a style="color: white" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
         </li>
         <li>
             <a style="color: white" href="#">EVENTS</a>
@@ -87,7 +87,7 @@ error_reporting(0);
             <a style="color: white" href="add_blogs.php">ADD BLOGS</a>
         </li>
         <li>
-            <a style="color: white" href="#">VIEW BLOGS</a>
+            <a style="color: white" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
         </li>
         <li>
             <a style="color: white" href="#">EVENTS</a>
