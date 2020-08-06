@@ -9,18 +9,12 @@ require "session_script.php";
   </button>
 
  
-
-
-
-
-
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="index.php">HOME <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="#">LINK</a>
       </li>
       
@@ -28,9 +22,9 @@ require "session_script.php";
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">DISABLED</a>
       </li>
 
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          DROPDOWN
+          CATEGORIES
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
@@ -46,8 +40,7 @@ require "session_script.php";
     <?php
               
                if (isset($_SESSION['user_name'])) {
-                 echo '<img class="img-circle profile_img" width="200px" src="'.$_SESSION["profile_pic"].'">';
-echo 'Hi '.$_SESSION["user_name"].' | <button class="btn btn-outline-default"><a href="logout.php" style="color:black">LOGOUT </a></button>';
+echo '<h6 style="color:white;">  Hi '.$_SESSION["user_name"].' </h6> | <button class="btn btn-danger"><a href="logout.php" style="color:white">LOGOUT </a></button>';
 
                }
                else{

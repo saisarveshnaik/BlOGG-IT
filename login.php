@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Blogging|Login</title>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
  <link rel="stylesheet" type="text/css" href="style.css">
@@ -24,6 +26,7 @@
 
 
 
+<section>
   <div class="container" style="margin-top: 2%;">
     <div class="row">
       <div class="col-md-3"></div>
@@ -65,59 +68,12 @@
 
 
   </div>
+</section>
 
 
 
 
 
-
-<!--   <section class="ftco-section contact-section ftco-degree-bg">
-    <div class="container">
-      <div class="row d-flex mb-5 contact-info">
-
-
-
-      </div>
-      <form action="#">
-        <div class="row block-9">
-          <div class="col-md-12">
-             
-            <div class="col-md-3">
-              
-            </div>
-            <div class="col-md-6">
-              <h4 class="mb-4" align="center" style="color: white" >LOGIN TO YOUR ACCOUNT</h4>
-            
-            <div class="form-group">
-              <label style="color: white">USERNAME</label>
-              <input type="text" id="uname" class="form-control" placeholder="Your username">
-            </div>
-            <div class="form-group">
-              <label style="color: white">PASSWORD</label>
-              <input type="password" id="pass" class="form-control" placeholder="Your password">
-            </div>
-            </div>
-            <div class="col-md-3"></div>
- 
-            </div>
-
-
-          <div class="row">
-            <div style="margin-left: 100px" class="col-md-6">     
-            <input type="button" class="btn btn-primary py-3 px-5" id="login" value="LOGIN">
-          </div>
-          <div style="margin-left: 100px" class="col-md-6"> 
-            <p><a href="register.php" class="btn btn-primary px-4 py-3">REGISTER NOW</a> </p>
-          </div>
-            </div>
-
-
-          </div>
-
-  
-        </form>
-      </div>
-    </section> -->
 
 
     <?php

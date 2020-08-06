@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
 	<title>Blogging|Add Blogs</title>
 
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<link rel="stylesheet" type="text/css" href="sidebar.css">
@@ -26,15 +27,15 @@
 	?>
 
 
-
+<section>
 	<div class="container" style="margin-top: 10px">
 		<form method="post" action="" enctype="multipart/form-data" id="myform">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="row">
 
-					<div class="col-md-2"></div>
-					<div class="col-md-10">
+					<div class="col-md-4"></div>
+					<div class="col-md-8">
 						<h4 style="color: white;text-align: center;" class="mb-4">CREATE A NEW BLOG!</h4>	
 
 
@@ -103,18 +104,21 @@
 
 	<div class="col-md-6">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
 				
-				<h4 style="color: white;text-align: center;" class="mb-4">CREATE A NEW BLOG!</h4>
+				<h4 style="color: white;text-align: center;" class="mb-4">CHOOSE A BLOG PICTURE!</h4>
 				<div class="form-group" style="text-align: center;">
 
 						<button type="button" class="btn btn-primary"><input type="file" id="blog_pic" name="file" /></button>	
 						</div>
 						<div class="form-group" style="text-align: center;">
-						<img src="images/default.png" id="img" width="60%" height="40%">
+						<img src="images/default.png" id="img" width="100%" height="100%">
 						<div><input type="hidden" name="image1" id="image1" disabled></div>
                         </div>
 					</div>
+
+			<div class="col-md-4"></div>		
 
 			</div>
  
@@ -124,7 +128,7 @@
 	</div>
 </form>
 </div>	
-
+</section>
 
 
 

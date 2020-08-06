@@ -12,6 +12,7 @@ if (isset($_SESSION["username"])){
 
 		$user_name =$_SESSION["user_name"];
         $user_id =$_SESSION["user_id"];
+        $type_id =$_SESSION["type_id"];
         
 		// $user_type =$_SESSION["user_type"] ;
 		// $type_id= $_SESSION["type_id"] ;

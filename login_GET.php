@@ -24,7 +24,6 @@ if($sql->rowCount()>0){
     $_SESSION["user_name"] = $row['user_name'];
     $_SESSION["username"] = $row['username'];
 	$_SESSION["password1"] = $row['password'];
-	
 	$_SESSION["type_id"] = $row['user_type'];
 	$_SESSION["user_id"] = $row['user_id'];
 	$_SESSION["profile_pic"] = $row['profile_pic'];

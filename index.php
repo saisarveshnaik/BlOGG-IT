@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Blogging</title>
 
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -27,11 +29,11 @@
 
 
 
-
+<section>
 <div class="container">
  <div class="row">
- 	<div class="col-md-1"></div>
- 	<div class="col-md-11">
+ 	<div class="col-md-2"></div>
+ 	<div class="col-md-10">
 
 <?php
 require 'connect.php';
@@ -59,13 +61,14 @@ $sql= $conn->prepare("SELECT * FROM blogs order by created_date_time DESC");
     <p style="font-size:18px;text-align:left;">'.$row['blog_desc'].'</p>
 
     <div class="row">
-     <div class="col-md-7">
+     <div class="col-md-8 text-center">
      <input  class="form-control" type="" id="comment_text" name="" placeholder="Leave a comment....">  
      </div>
-     <div class="col-md-5">
+     <div class="col-md-4 text-center">
      <div class="btn-group">
-     <button type="button" class="btn btn-success" style="margin-right:10px;">Comment</button>
+     <button type="button" class="btn btn-success" >Comment</button>
      <a href="#" class="btn btn-primary">Read More</a>
+     <button type="button" class="btn btn-danger" >Report</button>
      </div>
      </div>
     </div>
@@ -88,7 +91,7 @@ $sql= $conn->prepare("SELECT * FROM blogs order by created_date_time DESC");
  </div>	
 
 </div>
-
+</section>
 
     
 <!-- <div class="jumbotron p-0" id="jumbotron">

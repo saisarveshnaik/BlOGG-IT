@@ -13,8 +13,12 @@ $("#blogsubmit").click(function(){
 
 
 
-if (blog_category=='') {
-   alert("Please select a category");
+if (blog_pic=='') {
+   alert("Please upload a blog picture");
+
+ }
+ else if(blog_category==''){
+  alert("Please select a category");
 
  }
 
