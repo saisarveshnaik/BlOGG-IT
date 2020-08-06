@@ -33,7 +33,7 @@
 
 <?php
 require '../connect.php';
-$sql= $conn->prepare("SELECT * FROM blogs where user_id='".$_SESSION['user_id']."' and status='1' order by created_date_time DESC");
+$sql= $conn->prepare("SELECT * FROM blogs where user_id='".$_SESSION['user_id']."' and status='0' order by created_date_time DESC");
             $sql->execute();
             $sql->setFetchMode(PDO::FETCH_ASSOC);
             if($sql->rowCount()>0){

@@ -70,7 +70,7 @@
 							require '../connect.php';
 
 							$blog_id = $_GET['id'];
-							$sql= $conn->prepare("SELECT * FROM blogs where blog_id='".$blog_id."' and status='1'");
+							$sql= $conn->prepare("SELECT * FROM blogs where blog_id='".$blog_id."' and status='0'");
 							            $sql->execute();
 							            $sql->setFetchMode(PDO::FETCH_ASSOC);
 							            if($sql->rowCount()>0){
