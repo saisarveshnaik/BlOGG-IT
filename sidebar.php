@@ -49,13 +49,13 @@ error_reporting(0);
             <a style="color: white" href="#">EVENTS</a>
         </li>
         <li>
-            <a style="color: white" href="#">ABOUT</a>
+            <a style="color: white" href="services.php">SERVICES</a>
         </li>
         <li>
-            <a style="color: white" href="#">SERVICES</a>
+            <a style="color: white" href="about_us.php">ABOUT US</a>
         </li>
         <li>
-            <a style="color: white" href="#">CONTACT</a>
+            <a style="color: white" href="contact_us.php">CONTACT US</a>
         </li>
     </ul>
 </div>
@@ -93,13 +93,14 @@ error_reporting(0);
             <a style="color: white" href="#">EVENTS</a>
         </li>
         <li>
-            <a style="color: white" href="#">ABOUT</a>
+            <a style="color: white" href="services.php">SERVICES</a>
+            
         </li>
         <li>
-            <a style="color: white" href="#">SERVICES</a>
+            <a style="color: white" href="about_us">ABOUT US</a>
         </li>
         <li>
-            <a style="color: white" href="#">CONTACT</a>
+            <a style="color: white" href="contact_us.php">CONTACT US</a>
         </li>
     </ul>
 </div>
@@ -134,13 +135,14 @@ error_reporting(0);
             <a style="color: white" href="#">EVENTS</a>
         </li>
         <li>
-            <a style="color: white" href="#">ABOUT</a>
+            <a style="color: white" href="services.php">SERVICES</a>
+            
         </li>
         <li>
-            <a style="color: white" href="#">SERVICES</a>
+            <a style="color: white" href="about_us.php">ABOUT US</a>
         </li>
         <li>
-            <a style="color: white" href="#">CONTACT</a>
+            <a style="color: white" href="contact_us.php">CONTACT US</a>
         </li>
     </ul>
 </div>
