@@ -66,22 +66,14 @@
            
            <div class="row">
            <div class="col-md-8">
-           <h6><i>Posted by:</i></h6>
-           <p><i>created_date_time:'.$row['created_date_time'].'</i></p>
-           </div>
+           <h6><i>Posted by:  ';
+           include 'get_uname.php';
+            echo '</i></h6>
+           <p><i>created_date_time: '.$row['created_date_time'].'</i></p>
+           </div>';
 
-           <div class="col-md-4">
-           <div class="row">
-           <div class="col-md-6 text-right">
-           <strong><h6 style="margin-top:10%;">Likes counter</h6></strong>
-           </div>
-           <div class="col-md-6">
-           <button  type="button" class="btn btn-success form-control">Like</button>
-           </div>
-           </div>
-
-           
-           </div>
+           require 'likes/likes.php'; 
+           echo '
            </div>
 
 
@@ -90,21 +82,21 @@
 
            <div class="row">
            <div class="col-md-8 text-center">
-           <input  class="form-control" type="" id="comment_text" name="" placeholder="Leave a comment....">  
+           <input  class="form-control" type="" id="comment_text'.$row["blog_id"].'"  placeholder="Leave a comment....">  
            </div>
            <div class="col-md-4 text-center">
            <div class="btn-group">
-           <button type="button" class="btn btn-success" >Comment</button>
+           <button type="button" class="btn btn-success" onclick=\'commentfunc("' .$row["blog_id"]. '")\' >Comment</button>
            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#'.$row['blog_id'].'">Read more</button>
            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Report</button>
            </div>
            </div>
-           </div>
+           </div>';
+          require 'comments/comment.php';
 
 
 
-
-
+echo '
 <div class="modal fade right" id="'.$row['blog_id'].'" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
     <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
         <div class="modal-content-full-width modal-content ">
@@ -229,6 +221,8 @@ require 'footer.php';
   }
 
 </script>
+
+
 
 
 </body>
