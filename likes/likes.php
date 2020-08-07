@@ -3,7 +3,7 @@
 $blog_id=$row['blog_id'];
 $user_id=$_SESSION['user_id'];
 
-$count=$conn->prepare("SELECT * FROM likes where blog_id='".$blog_id."' and user_id='".$user_id."' and status='1'");
+$count=$conn->prepare("SELECT * FROM likes where blog_id='".$blog_id."' and status='1'");
 
         $count->execute();
 
@@ -64,7 +64,7 @@ echo '<div class="col-md-4">
             cache: false,
             success:function(data){
             if(data == 1){
-            alert('likes');
+            
              window.location.reload();
           
             }

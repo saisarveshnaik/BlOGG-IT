@@ -75,8 +75,8 @@ footer{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid black;
@@ -172,7 +172,7 @@ footer{
   margin-left: auto;
   margin-right: auto;
   width: 80px;
-  height: 100%;
+  height: 80px;
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid black;

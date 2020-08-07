@@ -5,19 +5,15 @@
             $sql->setFetchMode(PDO::FETCH_ASSOC);
             if($sql->rowCount()>0){
               foreach (($sql->fetchAll()) as $key => $row) {
-                 echo '         <div class="row">
-                                <div class="col-md-12">
-                                <h4 style="margin-left:20px;">Comments</h4>
-                                <hr/>
-                                </div>
-                                </div>';
+                echo'<hr/>';
+                
                                 $sql= $conn->prepare("SELECT * FROM users where user_id='".$row['user_id']."'");
                                 $sql->execute();
                                 $sql->setFetchMode(PDO::FETCH_ASSOC);
                                 if($sql->rowCount()>0){
                                   foreach (($sql->fetchAll()) as $key => $row1) {
 
-                                       echo '<div class="row" style="margin-top:10px;">
+                                       echo '<div class="row">
                                               <div class="col-md-1">
                                               <img id="commenterImage" src="'.$row1["profile_pic"].'" /> 
                                               </div>
@@ -36,7 +32,8 @@
 
 
                                               </div>
-                                              </div>';
+                                              </div>
+                                              <hr/>';
                                             }
                                           }
                                         }

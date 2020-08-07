@@ -34,10 +34,7 @@ error_reporting(0);
 
           if ($type_id=='0') {
             echo'           <li>
-            <a style="color: white" href="#">DASHBOARD</a>
-        </li>
-        <li>
-            <a style="color: white" href="blog_request.php">BLOG REQUEST</a>
+            <a style="color: white" href="dashboard.php">DASHBOARD</a>
         </li>
         <li>
             <a style="color: white" href="add_blogs.php">ADD BLOGS</a>
@@ -81,7 +78,7 @@ error_reporting(0);
         }
         else if($type_id=='1'){
             echo'           <li>
-            <a style="color: white" href="#">DASHBOARD</a>
+            <a style="color: white" href="dashboard.php">DASHBOARD</a>
         </li>
         <li>
             <a style="color: white" href="add_blogs.php">ADD BLOGS</a>

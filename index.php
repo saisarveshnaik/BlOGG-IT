@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Blogging</title>
+  <title>Blogging</title>
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -18,13 +18,13 @@
 </head>
 <body>
 
-	<?php
-	require 'header.php';
-	?>
+  <?php
+  require 'header.php';
+  ?>
 
-	<?php
-	require 'sidebar.php';
-	?>
+  <?php
+  require 'sidebar.php';
+  ?>
 
 
 
@@ -37,7 +37,7 @@
 
         <?php
         require 'connect.php';
-        $sql= $conn->prepare("SELECT * FROM blogs order by created_date_time DESC");
+        $sql= $conn->prepare("SELECT * FROM blogs INNER JOIN users ON blogs.user_id=users.user_id order by blogs.created_date_time DESC");
         $sql->execute();
         $sql->setFetchMode(PDO::FETCH_ASSOC);
         if($sql->rowCount()>0){
@@ -66,9 +66,7 @@
            
            <div class="row">
            <div class="col-md-8">
-           <h6><i>Posted by:  ';
-           include 'get_uname.php';
-            echo '</i></h6>
+           <h6><i>Posted by:'.$row['username'].'</i></h6>
            <p><i>created_date_time: '.$row['created_date_time'].'</i></p>
            </div>';
 
@@ -89,6 +87,10 @@
            <button type="button" class="btn btn-success" onclick=\'commentfunc("' .$row["blog_id"]. '")\' >Comment</button>
            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#'.$row['blog_id'].'">Read more</button>
            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal'.$row['blog_id'].'">Report</button>
+           </div>
+           </div>
+           </div>
+
            <!-- Modal -->
 <div class="text-center">
   <div id="myModal'.$row['blog_id'].'" class="modal fade" role="dialog">
@@ -128,9 +130,6 @@
     </div>
   </div>
 </div>
-           </div>
-           </div>
-           </div>
 <div class="modal fade right" id="'.$row['blog_id'].'" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
     <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
         <div class="modal-content-full-width modal-content ">
@@ -148,6 +147,12 @@
 
                 <p class="text-center" style="margin-left:5%;margin-right:5%">'.$row['blog_desc'].'</p>
 
+           
+            <div class="row">
+            <div class="col-md-12">
+            <h4 style="margin-left:20px;">Comments</h4>
+            <hr/>
+            </div>
             </div>';
          
 
@@ -155,7 +160,7 @@ require 'comments/comment.php';
 
 echo '
 
-
+              </div>
             <div class="modal-footer-full-width  modal-footer">
                 <button type="button" class="btn btn-danger btn-md btn-rounded" data-dismiss="modal">Close</button>
                <!-- <button type="button" class="btn btn-primary btn-md btn-rounded">Save changes</button> -->
@@ -187,12 +192,9 @@ echo '
 
 
      </div>
-   </div>	
+   </div> 
  </div>
 </section>
-
-
-
 
 
 
@@ -224,6 +226,7 @@ require 'footer.php';
   }
 
 </script>
+
 <script type="text/javascript">
   function reportfunc(blog_id)
     { 
@@ -267,6 +270,10 @@ require 'footer.php';
 }
 
 </script>
+
+
+
+
 
 
 
