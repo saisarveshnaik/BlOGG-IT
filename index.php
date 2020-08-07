@@ -88,15 +88,49 @@
            <div class="btn-group">
            <button type="button" class="btn btn-success" onclick=\'commentfunc("' .$row["blog_id"]. '")\' >Comment</button>
            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#'.$row['blog_id'].'">Read more</button>
-           <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Report</button>
+           <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal'.$row['blog_id'].'">Report</button>
+           <!-- Modal -->
+<div class="text-center">
+  <div id="myModal'.$row['blog_id'].'" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Report this Blog</h4>
+        </div>
+        <div class="modal-body">
+          <p>We appretiate your report feedback!</p> <br>
+
+
+          <select name="category" id="report_category' .$row['blog_id']. '" class="form-control" required> 
+            <option value="" > Select Category</option>
+            <option value="spam" > Spam </option>
+            <option value="pornography" > Pornography </option>
+            <option value="Hatred and Bullying" > Hatred and Bullying </option>
+            <option value="Self-harm" > Self-harm </option>
+            <option value="Violant contnet" > Violant,gory and harmful content </option>
+            <option value="Illegal activities" > Illegal activities(e.g drug use)</option>
+            <option value="Copyright infrigement" > Copyright and trademark infrigement</option>
+            <option value="Dont like it" > I just don\'t like it</option>
+          </select>
+
+
+          <input style="margin-top: 1%;" class="form-control" type="text" name="report_desc" id="report_desc' .$row['blog_id']. '" placeholder="Write report description..." required>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" onclick=\'reportfunc("' .$row['blog_id']. '")\' class="btn btn-danger" data-dismiss="modal">Report</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
            </div>
            </div>
-           </div>';
-          require 'comments/comment.php';
-
-
-
-echo '
+           </div>
 <div class="modal fade right" id="'.$row['blog_id'].'" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
     <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
         <div class="modal-content-full-width modal-content ">
@@ -114,7 +148,14 @@ echo '
 
                 <p class="text-center" style="margin-left:5%;margin-right:5%">'.$row['blog_desc'].'</p>
 
-            </div>
+            </div>';
+         
+
+require 'comments/comment.php';
+
+echo '
+
+
             <div class="modal-footer-full-width  modal-footer">
                 <button type="button" class="btn btn-danger btn-md btn-rounded" data-dismiss="modal">Close</button>
                <!-- <button type="button" class="btn btn-primary btn-md btn-rounded">Save changes</button> -->
@@ -155,45 +196,7 @@ echo '
 
 
 
-<!-- Modal -->
-<div class="text-center">
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4>Report this Blog</h4>
-        </div>
-        <div class="modal-body">
-          <p>We appretiate your report feedback!</p> <br>
-
-
-          <select name="category" id="report_category" class="form-control"> 
-            <option value="" > Select Category</option>
-            <option value="spam" > Spam </option>
-            <option value="pornography" > Pornography </option>
-            <option value="Hatred and Bullying" > Hatred and Bullying </option>
-            <option value="Self-harm" > Self-harm </option>
-            <option value="Violant contnet" > Violant,gory and harmful content </option>
-            <option value="Illegal activities" > Illegal activities(e.g drug use)</option>
-            <option value="Copyright infrigement" > Copyright and trademark infrigement</option>
-            <option value="Dont like it" > I just don't like it</option>
-          </select>
-
-
-          <input style="margin-top: 1%;" class="form-control" type="text" name="report_desc" id="report_desc" placeholder="Write report description...">
-        </div>
-        <div class="modal-footer">
-
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Report</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 
 
@@ -221,7 +224,49 @@ require 'footer.php';
   }
 
 </script>
+<script type="text/javascript">
+  function reportfunc(blog_id)
+    { 
+      
+           var blog_id=blog_id;
+           var report_category=$("#report_category"+blog_id).val();
+           var report_desc=$("#report_desc"+blog_id).val();
 
+           if(report_category == ""){
+
+           }
+
+           if(report_desc == ""){
+
+           }
+                  
+
+           var dataString = 'blog_id='+blog_id+'&report_category='+report_category+'&report_desc='+report_desc;
+
+
+            $.ajax({
+            type: "POST",
+            url: "add_report.php",
+            data: dataString,
+            cache: false,
+            success:function(data){
+            if(data == 1){
+            
+             window.location.reload();
+          
+            }
+            else if(data == 5){
+              alert("Blog Already Reported!");
+          
+            }
+
+          }
+      });
+
+
+}
+
+</script>
 
 
 
