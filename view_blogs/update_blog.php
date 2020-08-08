@@ -22,7 +22,7 @@
 	?>
 
 	<?php
-	require '../sidebar.php';
+	require '../sidebar2.php';
 	?>
 
 
