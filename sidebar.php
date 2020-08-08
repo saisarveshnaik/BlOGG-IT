@@ -43,6 +43,10 @@ error_reporting(0);
             <a style="color: white" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
         </li>
         <li>
+            <a style="color: white" href="reports.php">REPORTS</a>
+        </li>
+
+        <li>
             <a style="color: white" href="#">EVENTS</a>
         </li>
         <li>
