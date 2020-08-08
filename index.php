@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
+  <script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <link rel="stylesheet" type="text/css" href="sidebar.css">
@@ -82,11 +84,11 @@
            <div class="col-md-8 text-center">
            <input  class="form-control" type="" id="comment_text'.$row["blog_id"].'"  placeholder="Leave a comment....">  
            </div>
-           <div class="col-md-4 text-center">
+           <div class="col-md-4 text-right">
            <div class="btn-group">
-           <button type="button" class="btn btn-success" onclick=\'commentfunc("' .$row["blog_id"]. '")\' >Comment</button>
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#'.$row['blog_id'].'">Read more</button>
-           <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal'.$row['blog_id'].'">Report</button>
+           <button style="width:80px;" type="button" class="btn btn-info" onclick=\'commentfunc("' .$row["blog_id"]. '")\' ><i class="fas fa-comments" style="font-size:20px;"></i></button>
+           <button style="width:80px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#'.$row['blog_id'].'"><i class="fas fa-book-open" style="font-size:18px;"></i></button>
+           <button style="width:80px;" type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal'.$row['blog_id'].'"><i class="fas fa-exclamation-triangle" style="font-size:18px;"></i></button>
            </div>
            </div>
            </div>

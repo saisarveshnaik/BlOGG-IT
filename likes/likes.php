@@ -27,11 +27,12 @@ echo '<div class="col-md-4">
         $number_of_rows1=$count->rowCount(); 
         
         if($number_of_rows1 == ""){
-        echo '<button  type="button" class="btn btn-success form-control" onclick=\'likefunc("' .$blog_id. '")\'>Like</button>';
+        echo '<button  type="button" class="btn btn-success form-control" onclick=\'likefunc("' .$blog_id. '")\'><i class="fas fa-thumbs-up" style="font-size:20px;margin-top:5px;"></i></button>';
+
         }
         else
         {
-        echo '<button  type="button" class="btn btn-success form-control" onclick=\'likefunc("' .$blog_id. '")\'>UnLike</button>';
+        echo '<button  type="button" class="btn btn-warning form-control" onclick=\'likefunc("' .$blog_id. '")\'><i class="fas fa-thumbs-down" style="font-size:20px;margin-top:5px;"></i></button>';
         }
 
       echo'</div>

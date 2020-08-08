@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
+	 <script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" type="text/css" href="../style.css">
 
 	<link rel="stylesheet" type="text/css" href="../sidebar.css">
@@ -18,7 +20,7 @@
 
 
 	<?php
-	require '../header.php';
+	require '../header2.php';
 	?>
 
 	<?php

@@ -2,6 +2,21 @@
 require "session_script.php";
 ?>
 
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="stylesheet" type="text/css" href="sidebar.css">
+
+</head>
+<body>
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" style="margin-left: 320px" href="#">BLOGGING</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,7 +27,7 @@ require "session_script.php";
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">HOME <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="../index.php">HOME <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#">LINK</a>
@@ -40,7 +55,7 @@ require "session_script.php";
     <?php
               
                if (isset($_SESSION['user_name'])) {
-echo '<h6 style="color:white;margin-top:10px">  Welcome! '.$_SESSION["user_name"].' </h6> | <a href="logout.php" class="btn btn-danger btn-circle" style="font-size:18px;"><i class="fas fa-power-off" style="margin-top:5px;"></i></a>';
+echo '<h6 style="color:white;margin-top:10px">  Welcome! '.$_SESSION["user_name"].' </h6> | <a href="../logout.php" class="btn btn-danger btn-circle" style="font-size:18px;"><i class="fas fa-power-off" style="margin-top:5px;"></i></a>';
 
                }
                else{
@@ -53,5 +68,3 @@ echo '<h6 style="color:white;margin-top:10px">  Welcome! '.$_SESSION["user_name"
     </form>
   </div>
 </nav>
-
-

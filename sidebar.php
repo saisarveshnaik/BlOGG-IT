@@ -21,7 +21,10 @@ error_reporting(0);
              }
              else
              {
-                echo "";
+                echo '<div style="margin-top:10%;">
+                 <img id="profile" src="images/profile.png">
+
+                 </div>';
 
              }
              ?>

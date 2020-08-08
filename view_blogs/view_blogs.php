@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
+   <script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" type="text/css" href="../style.css">
 
   <link rel="stylesheet" type="text/css" href="../sidebar.css">
@@ -19,7 +21,7 @@
 <body>
 
   <?php
-  require '../header.php';
+  require '../header2.php';
   ?>
 
   <?php
@@ -87,8 +89,10 @@
                     <td  bgcolor="#2f3e46">
 
                     <div class="btn-group">
-                    <input type="button" class="btn btn-primary" value="Edit" onclick=\'editfunc("' .$row["blog_id"]. '")\' >
-                    <input type="button" class="btn btn-danger" value="Delete" onclick=\'deletefunc("' .$row["blog_id"]. '")\' >
+                    <button type="button" class="btn btn-primary" value="Edit" onclick=\'editfunc("' .$row["blog_id"]. '")\' ><i class="fas fa-pencil-alt"></i></button>
+
+
+                    <button type="button" class="btn btn-danger" value="Delete" onclick=\'deletefunc("' .$row["blog_id"]. '")\' ><i class="fas fa-trash-alt"></i></button>
                     </div>
 
                     </td>
