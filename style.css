@@ -1,3 +1,7 @@
+#padding_zero{
+  padding: 0px;
+}
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -8,7 +12,7 @@ hr {
 
 
 .margin-left{
-    margin-left: 12px !important;
+  margin-left: 12px !important;
 
 }
 
@@ -17,25 +21,25 @@ hr {
   margin-left: 400px ;
   margin-right: 200px;
 
-}*/
+  }*/
 
-#sidebartext{
-	color : white;
-}
-
-
-
-.form-navbar{
-	margin-right: 190px !important
-}
+  #sidebartext{
+   color : white;
+ }
 
 
-body {
+
+ .form-navbar{
+   margin-right: 190px !important
+ }
+
+
+ body {
   background-image: url('images/solid.png');
   background-attachment: fixed ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 footer{
@@ -51,6 +55,12 @@ footer{
 	height: 450px;
   resize: none;
 }
+
+.contactTextarea{
+  height: 180px;
+  resize: none;
+}
+
 
 
 #formsubmit{
@@ -71,6 +81,42 @@ footer{
 }
 
 
+#profile_page_pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#img1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5%;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 #profile{
   display: block;
   margin-left: auto;
@@ -82,6 +128,7 @@ footer{
   border: 1px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 
 #read_more_img{
@@ -123,6 +170,40 @@ footer{
   border-radius: 1%;
 }
 
+#profile_blogs_image{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 315px;
+  height: 315px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+#about_us_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#about_card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #17a2b8; 
+}
+
+
+#container_shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
 
 .roundBorder{
   border-radius: 2%;
@@ -138,35 +219,35 @@ footer{
 
 
 /* MODAL BOX CSS FOR READ MORE*/
-    .modal-dialog-full-width {
-        width: 100% !important;
-        height: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        max-width:none !important;
+.modal-dialog-full-width {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width:none !important;s
 
-    }
+}
 
-    .modal-content-full-width  {
-        height: auto !important;
-        min-height: 100% !important;
-        border-radius: 0 !important;
-        background-color: #ececec !important 
-    }
+.modal-content-full-width  {
+  height: auto !important;
+  min-height: 100% !important;
+  border-radius: 0 !important;
+  background-color: #ececec !important 
+}
 
-    .modal-header-full-width  {
-        border-bottom: 1px solid #9ea2a2 !important;
-    }
+.modal-header-full-width  {
+  border-bottom: 1px solid #9ea2a2 !important;
+}
 
-    .modal-footer-full-width  {
-        border-top: 1px solid #9ea2a2 !important;
-    }
-
-
+.modal-footer-full-width  {
+  border-top: 1px solid #9ea2a2 !important;
+}
 
 
 
-    /*COMMENTS*/
+
+
+/*COMMENTS*/
 #commenterImage{
   display: block;
   margin-left: auto;
@@ -192,11 +273,47 @@ footer{
 }
 
 .btn-circle {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   text-align: center;
   padding: 6px 0;
   font-size: 12px;
   line-height: 1.42;
   border-radius: 30px;
 }
+
+
+
+
+
+
+
+
+/*FOR IMPLEMENTING SEND BUTTON INTO THE INPUT*/
+
+#commentDiv{
+  /* This bit sets up the horizontal layout */
+  display:flex;
+  flex-direction:row;
+  outline: none;
+  /* This bit draws the box around it */
+  
+
+  /* I've used padding so you can see the edges of the elements. */
+  padding:2px;
+}
+
+.commentfix{
+ flex-grow:2;
+ /* And hide the input's outline, so the form looks like the outline */
+ border:none;
+ outline: none;
+}
+
+.commentfix:focus {
+  /* removing the input focus blue box. Put this on the form if you like. */
+
+  outline: none;
+}
+
+
