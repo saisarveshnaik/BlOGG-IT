@@ -43,34 +43,38 @@
 
           <div class="row" style="margin-top: 5px">
             <div class="col-md-4 text-center">
+              <?php
+              $count=$conn->prepare("SELECT * FROM blogs where user_id='".$_SESSION['user_id']."' and status='0'");
 
-             <?php  
-             require 'connect.php';
+        $count->execute();
 
+        $no_of_blogs=$count->rowCount(); 
+        
+        if($no_of_blogs == ''){
+          $no_of_blogs=0;
+        }
 
-             $data = $conn->query("SELECT count(blog_id) as Total1 FROM blogs")->fetchAll();
-
-             foreach ($data as $row) {
-
-               
-               echo '<h4 style="color: #262626"><strong>'.$row['Total1'].'</strong></h4>';
-
-             }?>
-             
+        echo '
+    <h4 style="margin-top: 30px; "><strong>'.$no_of_blogs.'</strong></h4>';
+             ?>
              <p style="font-size:20px;">Blogs</p>
            </div>
            <div class="col-md-4 text-center">
             
-             <?php  
-             require 'connect.php';
+            <?php
+              $count=$conn->prepare("SELECT * FROM following where following_id='".$_SESSION['user_id']."' and status='1'");
 
+        $count->execute();
 
-             $data = $conn->query("SELECT count(blog_id) as Total2 FROM blogs WHERE user_id='".$user_id."'")->fetchAll();
+        $no_of_followers=$count->rowCount(); 
+        
+        if($no_of_followers == ''){
+          $no_of_followers=0;
+        }
 
-             foreach ($data as $row) {
-
-               echo '<h4 style="color: #262626"><strong>'.$row['Total2'].'</strong></h4>';
-             }?>
+        echo '
+    <h4 style="margin-top: 30px; "><strong>'.$no_of_followers.'</strong></h4>';
+             ?>
              
              <p style="font-size:20px;">Followers</p>
            </div>
@@ -78,15 +82,20 @@
            <div class="col-md-4 text-center">
             
             <?php  
-            require 'connect.php';
+            $count=$conn->prepare("SELECT * FROM following where user_id='".$_SESSION['user_id']."' and status='1'");
 
+        $count->execute();
 
-            $data = $conn->query("SELECT count(user_id) as Total3 FROM users")->fetchAll();
+        $no_of_following=$count->rowCount(); 
+        
+        if($no_of_following == ''){
+          $no_of_following=0;
+        }
 
-            foreach ($data as $row) {
-
-             echo '<h4 style="color: #262626"><strong>'.$row['Total3'].'</strong></h4>';
-           }?>
+        echo '<h4 style="margin-top: 30px; "><strong>'.$no_of_following.'</strong></h4>';
+            
+           
+           ?>
            <p style="font-size:20px;">Following</p>
          </div>
        </div>
@@ -163,7 +172,7 @@
 
           <div class="row">
           <div class="col-md-8">
-          <p style=margin-bottom:5px;><i>Posted by:'.$row['username'].'</i></p>
+          <p style=margin-bottom:5px;><i>Posted by: <a href="profile/profile.php?profile_id='.$row['user_id'].'">'.$row['username'].'</a></i></p>
           <p style="font-size:11px;margin-top:-10px;"><i>created_date_time: '.$row['created_date_time'].'</i></p>
           </div>';
 
@@ -379,6 +388,8 @@ require 'footer.php';
 
 
  }
+
+
 
 </script>
 
