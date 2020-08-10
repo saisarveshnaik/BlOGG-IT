@@ -12,38 +12,38 @@ $report_desc=$_POST['report_desc'];
 
 $count=$conn->prepare("SELECT * FROM reports where blog_id='".$blog_id."' and user_id='".$_SESSION['user_id']."' and status='1'");
 
-        $count->execute();
+$count->execute();
 
-        $number_of_rows1=$count->rowCount(); 
-        
-        if($number_of_rows1 == ""){
+$number_of_rows1=$count->rowCount(); 
 
-
-if($report_category != ""){
+if($number_of_rows1 == ""){
 
 
+	if($report_category != ""){
 
 
-$sql="INSERT INTO reports(blog_id, user_id, report_category, report_desc) VALUES (:blog_id,:user_id,:report_category,:report_desc)";
-$stmt= $conn->prepare($sql);
-$result= $stmt->execute(array(
-	':blog_id'=>$blog_id,
-	':user_id'=>$_SESSION['user_id'],
-	':report_category'=>$report_category,
-	':report_desc' =>$report_desc
-));
 
 
-if($result)
-{
-	echo "1";
-}
-else
-{
-	echo "0";
-}
+		$sql="INSERT INTO reports(blog_id, user_id, report_category, report_desc) VALUES (:blog_id,:user_id,:report_category,:report_desc)";
+		$stmt= $conn->prepare($sql);
+		$result= $stmt->execute(array(
+			':blog_id'=>$blog_id,
+			':user_id'=>$_SESSION['user_id'],
+			':report_category'=>$report_category,
+			':report_desc' =>$report_desc
+		));
 
-}
+
+		if($result)
+		{
+			echo "1";
+		}
+		else
+		{
+			echo "0";
+		}
+
+	}
 }
 else
 { 

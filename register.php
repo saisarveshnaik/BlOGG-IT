@@ -23,18 +23,19 @@
 
 
 	<section>
-		<div class="container" style="margin-top: 2%;">
+		<div class="container" style="margin-right:300px; padding: 20px;width: 800px;" id="about_card">
 			<div class="row">
-				<div class="col-md-3"></div>
+				<div class="col-md-2"></div>
 
-				<div class="col-md-6">
+				<div class="col-md-8 center" style="margin-top: 40px;margin-bottom: 40px;">
 
-					<h4 style="color: white;text-align: center;" class="mb-4">REGISTER FOR A NEW ACCOUNT</h4>
+					<h4 style="text-align: center;color: #4c4c4c" class="mb-4">REGISTER FOR A NEW ACCOUNT</h4>
+					<hr/>
 
-					<div class="row">
+					<div class="row" style="margin-top: 40px;">
 						<div class="col-md-4">
 							<div class="form-group">
-								<label style="color: white">Profile Picture</label>	
+								<label>Profile Picture</label>	
 								<input type="file" id="profile_pic" name="file" />
 							</div>
 						</div>
@@ -48,47 +49,47 @@
 
 
 					<div class="form-group">
-						<label style="color: white">Full Name</label>
-						<input type="text" class="form-control" id="user_name" placeholder="Your Name">
+						<label >Hi! Whats your name?</label>
+						<input type="text" class="form-control" id="user_name" placeholder="Your Name" style="background-color: #fafafa;">
 					</div>
 					<div class="form-group">
-						<label style="color: white">Address</label>
-						<input type="text" class="form-control" id="user_address" placeholder="Your Address">
+						<label >Address</label>
+						<input type="text" class="form-control" id="user_address" placeholder="Your Address" style="background-color: #fafafa;">
 					</div>
 					<div class="form-group">
-						<label style="color: white">Contact No</label>
-						<input type="number" class="form-control" id="user_cont" placeholder="Your Contact Number">
+						<label >Contact No</label>
+						<input type="number" class="form-control" id="user_cont" placeholder="Your Contact Number" style="background-color: #fafafa;">
 					</div>
 					<div class="form-group">
-						<label style="color: white">Email</label>
-						<input type="text" class="form-control" id="user_email" placeholder="Your Email">
+						<label >Email</label>
+						<input type="text" class="form-control" id="user_email" placeholder="Your Email" style="background-color: #fafafa;">
 					</div>
 					<div class="form-group">
-						<label style="color: white">Username(must be unique)</label>
-						<input type="text" class="form-control" id="username" placeholder="Create Unique Username">
+						<label >Username(must be unique)</label>
+						<input type="text" class="form-control" id="username" placeholder="Create Unique Username" style="background-color: #fafafa;">
 						<small id="limit" style="color: red; "></small>
 						<small id="flag"></small>
 					</div>
 					<div class="form-group">
-						<label style="color: white">Password</label>
-						<input type="password" class="form-control" id="password" placeholder="Your Password">
+						<label >Password</label>
+						<input type="password" class="form-control" id="password" placeholder="Your Password" style="background-color: #fafafa;">
 					</div>
 
 					<div class="form-group">
-						<label style="color: white">Gender:</label><br>
-						<input type="radio" id="gender" value="male"> Male<br>
-						<input type="radio" id="gender" value="female"> Female<br>
+						<label >Gender:</label><br>
+						<input type="radio" id="gender" name="gender" value="male"> Male<br>
+						<input type="radio" id="gender" name="gender" value="female"> Female<br>
 					</div>
 
 					<div style="text-align: center;">
-						<button type="button" id="formsubmit" class="btn btn-primary py-3 px-5">REGISTER</button>
+						<button type="button" id="formsubmit" class="btn btn-light py-3 px-5" style="background-color: #e2e2e2;">REGISTER NOW!</button>
 					</div>
 
 
 
 				</div>
 
-				<div class="col-md-3"></div>
+				<div class="col-md-2"></div>
 			</div>
 
 		</div>

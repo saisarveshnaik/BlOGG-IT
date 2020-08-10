@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
-	 <script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="../style.css">
 
@@ -48,27 +48,27 @@
 
 
 						<?php
-							require '../connect.php';
+						require '../connect.php';
 
-							$blog_id = $_GET['id'];
-							$sql= $conn->prepare("SELECT * FROM blogs where blog_id='".$blog_id."' and status='0'");
-							            $sql->execute();
-							            $sql->setFetchMode(PDO::FETCH_ASSOC);
-							            if($sql->rowCount()>0){
-				              foreach (($sql->fetchAll()) as $key => $row) {
+						$blog_id = $_GET['id'];
+						$sql= $conn->prepare("SELECT * FROM blogs where blog_id='".$blog_id."' and status='0'");
+						$sql->execute();
+						$sql->setFetchMode(PDO::FETCH_ASSOC);
+						if($sql->rowCount()>0){
+							foreach (($sql->fetchAll()) as $key => $row) {
 
-				              	echo '
+								echo '
 
-						<div class="item form-group">
-							<input type=button id="blog_id" style="display:none;" value="'.$blog_id.'">
-							<input type="text"  required="required" class="form-control " id="blog_title" name="productname" value="'.$row['blog_title'].'">
-						</div>
-						<div class="item form-group">
-							<textarea class="form-control blogTextarea" type="text" name="productnote"  id="blog_desc"> '.$row['blog_desc'].' </textarea>
-						</div>';
+								<div class="item form-group">
+								<input type=button id="blog_id" style="display:none;" value="'.$blog_id.'">
+								<input type="text"  required="required" class="form-control " id="blog_title" name="productname" value="'.$row['blog_title'].'">
+								</div>
+								<div class="item form-group">
+								<textarea class="form-control blogTextarea" type="text" name="productnote"  id="blog_desc"> '.$row['blog_desc'].' </textarea>
+								</div>';
 							}
-								}
-								?>
+						}
+						?>
 
 
 					</div>

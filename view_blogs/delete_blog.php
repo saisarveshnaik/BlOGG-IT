@@ -16,24 +16,24 @@ $status= '2';
 
 
 
-	$sql1 = "UPDATE blogs SET status=:status WHERE blog_id=:id";
-	$stmt = $conn->prepare($sql1);
-	$result=  $stmt->execute(array(
-		':status' => $status,
-		
+$sql1 = "UPDATE blogs SET status=:status WHERE blog_id=:id";
+$stmt = $conn->prepare($sql1);
+$result=  $stmt->execute(array(
+	':status' => $status,
+	
 
 
 
-		':id' => $id		
-	));
+	':id' => $id		
+));
 
-	if ($result) {
-		echo 1;
+if ($result) {
+	echo 1;
 
-	}
-	else{
-		echo 0;
-	}
+}
+else{
+	echo 0;
+}
 
 
 ?>

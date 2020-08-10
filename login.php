@@ -26,49 +26,64 @@
 
 
 
-<section>
-  <div class="container" style="margin-top: 2%;">
-    <div class="row">
-      <div class="col-md-3"></div>
+  <section>
+    <div class="container" style="margin-right:300px;  padding: 10px;width: 800px" id="about_card" >
+      <div class="row" style="margin-top: 60px;">
+        <div class="col-md-3"></div>
 
 
-      <div class="col-md-6">
-        <h4 class="mb-4" align="center" style="color: white" >LOGIN TO YOUR ACCOUNT</h4>
-        <div class="form-group">
-          <label style="color: white">USERNAME</label>
-          <input type="text" id="uname" class="form-control" placeholder="Your username">
+        <div class="col-md-6">
+          <h4 class="mb-4" align="center" style="color: #4c4c4c">LOGIN TO YOUR ACCOUNT</h4>
+          <hr/>
+          <div class="form-group">
+            <label >Username</label>
+            <input type="text" id="uname" class="form-control" placeholder="Your username" style="background-color: #fafafa;">
+          </div>
+          <div class="form-group">
+            <label >Password</label>
+            <input type="password" id="pass" class="form-control" placeholder="Your password" style="background-color: #fafafa;">
+          </div> 
         </div>
-        <div class="form-group">
-          <label style="color: white">PASSWORD</label>
-          <input type="password" id="pass" class="form-control" placeholder="Your password">
-        </div> 
+
+
+        <div class="col-md-3"></div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;margin-bottom: 60px;">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center">
+
+
+
+          
+            <input type="button" class="btn btn-light  form-control" id="login" value="LOGIN" style="background-color: #0195f7;color: white"> 
+
+            <div class="row" style="margin-top: 16px;">
+              <div class="col-md-5">
+                <hr/>
+              </div>
+              <div class="col-md-2">
+                <p >OR</p>
+              </div>
+              <div class="col-md-5">
+                <hr/>
+              </div>
+            </div>
+
+
+            <a href="register.php" style="background-color: #e2e2e2;" type="button" class="btn btn-light form-control">Register</a>
+         
+
+          
+          
+        </div>
+        <div class="col-md-3"></div>
       </div>
 
 
-      <div class="col-md-3"></div>
+
     </div>
-
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div style="text-align: center;" class="col-md-6">
-
-
-
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <input type="button" class="btn btn-primary py-3 px-5" id="login" value="LOGIN" style="margin-right: 10px"> 
-        <button style="margin-left: 10px;" type="button" class="btn btn-primary py-3 px-5"><a href="register.php" style="color: white;">Register</a></button>
-      </div>
-
-        
-        
-      </div>
-      <div class="col-md-3"></div>
-    </div>
-
-
-
-  </div>
-</section>
+  </section>
 
 
 
@@ -76,14 +91,14 @@
 
 
 
-    <?php
-    require 'footer.php';
-    ?>
+  <?php
+  require 'footer.php';
+  ?>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
-    <script src="login_POST.js"></script>
+  <script src="login_POST.js"></script>
 
-  </body>
-  </html>
+</body>
+</html>

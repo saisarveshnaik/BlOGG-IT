@@ -12,160 +12,148 @@ error_reporting(0);
         <ul class="sidebar-nav">
            
             <?php
-              
-               if (isset($_SESSION['user_name'])) {
-                 echo '<div style="margin-top:10%;">
-                 <img id="profile" src="../'.$_SESSION["profile_pic"].'">
+            
+            if (isset($_SESSION['user_name'])) {
+             echo '<div style="margin-top:10%;">
+             <img id="profile" src="../'.$_SESSION["profile_pic"].'">
 
-                 </div>';
-             }
-             else
-             {
-                echo "";
+             </div>';
+         }
+         else
+         {
+            echo "";
 
-             }
-             ?>
-                  
-           <br>
-
-
-<?php 
+        }
+        ?>
+        
+        <br>
 
 
-          if ($type_id=='0') {
+        <?php 
+
+
+        if ($type_id=='0') {
             echo'           <li>
-            <a style="color: white" href="../dashboard.php">DASHBOARD</a>
-        </li>
-        <li>
+            <a style="color: white" href="../profile.php">YOUR PROFILE</a>
+            </li>
+            <li>
             <a style="color: white" href="../add_blogs.php">ADD BLOGS</a>
-        </li>
-        <li>
+            </li>
+            <li>
             <a style="color: white" href="view_blogs.php">YOUR BLOGS</a>
-        </li>
-        <li>
+            </li>
+            <li>
             <a style="color: white" href="../reports.php">REPORTS</a>
-        </li>
+            </li>
 
-        <li>
-            <a style="color: white" href="#">EVENTS</a>
-        </li>
-        <li>
+            <li>
             <a style="color: white" href="../services.php">SERVICES</a>
-        </li>
-        <li>
+            </li>
+            <li>
             <a style="color: white" href="../about_us.php">ABOUT US</a>
-        </li>
-        <li>
+            </li>
+            <li>
             <a style="color: white" href="../contact_us.php">CONTACT US</a>
-        </li>
-    </ul>
-</div>
-<!-- /#sidebar-wrapper -->
+            </li>
+            </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
 
-<!-- Page Content -->
-<div id="page-content-wrapper">
-    <div class="container-fluid">
-        <div class="row">
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+            <div class="container-fluid">
+            <div class="row">
             <div class="col-lg-12">
-                <h1></h1>
-                <p></p>
-                <p></p>
+            <h1></h1>
+            <p></p>
+            <p></p>
 
             </div>
-        </div>
-    </div>
-</div>
-<!-- /#page-content-wrapper -->
+            </div>
+            </div>
+            </div>
+            <!-- /#page-content-wrapper -->
 
-</div>
-';
+            </div>
+            ';
         }
         else if($type_id=='1'){
             echo'           <li>
-            <a style="color: white" href="dashboard.php">DASHBOARD</a>
-        </li>
-        <li>
+            <a style="color: white" href="../profile.php">YOUR PROFILE</a>
+            </li>
+            <li>
             <a style="color: white" href="add_blogs.php">ADD BLOGS</a>
-        </li>
-        <li>
+            </li>
+            <li>
             <a style="color: white" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
-        </li>
-        <li>
-            <a style="color: white" href="#">EVENTS</a>
-        </li>
-        <li>
+            </li>
+            <li>
             <a style="color: white" href="services.php">SERVICES</a>
             
-        </li>
-        <li>
+            </li>
+            <li>
             <a style="color: white" href="about_us">ABOUT US</a>
-        </li>
-        <li>
+            </li>
+            <li>
             <a style="color: white" href="contact_us.php">CONTACT US</a>
-        </li>
-    </ul>
-</div>
-<!-- /#sidebar-wrapper -->
+            </li>
+            </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
 
-<!-- Page Content -->
-<div id="page-content-wrapper">
-    <div class="container-fluid">
-        <div class="row">
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+            <div class="container-fluid">
+            <div class="row">
             <div class="col-lg-12">
-                <h1></h1>
-                <p></p>
-                <p></p>
+            <h1></h1>
+            <p></p>
+            <p></p>
 
             </div>
-        </div>
-    </div>
-</div>
-<!-- /#page-content-wrapper -->
+            </div>
+            </div>
+            </div>
+            <!-- /#page-content-wrapper -->
 
-</div>
-';
+            </div>
+            ';
 
         }
 
         else{
-            echo'           <li>
-            <a style="color: white" href="#">DASHBOARD</a>
-        </li>
-        
-        <li>
-            <a style="color: white" href="#">EVENTS</a>
-        </li>
-        <li>
+            echo'
+            <li>
             <a style="color: white" href="services.php">SERVICES</a>
             
-        </li>
-        <li>
+            </li>
+            <li>
             <a style="color: white" href="about_us.php">ABOUT US</a>
-        </li>
-        <li>
+            </li>
+            <li>
             <a style="color: white" href="contact_us.php">CONTACT US</a>
-        </li>
-    </ul>
-</div>
-<!-- /#sidebar-wrapper -->
+            </li>
+            </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
 
-<!-- Page Content -->
-<div id="page-content-wrapper">
-    <div class="container-fluid">
-        <div class="row">
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+            <div class="container-fluid">
+            <div class="row">
             <div class="col-lg-12">
-                <h1></h1>
-                <p></p>
-                <p></p>
+            <h1></h1>
+            <p></p>
+            <p></p>
 
             </div>
-        </div>
-    </div>
-</div>
-<!-- /#page-content-wrapper -->
+            </div>
+            </div>
+            </div>
+            <!-- /#page-content-wrapper -->
 
-</div>
-';
+            </div>
+            ';
         }
 
         ?>

@@ -14,31 +14,31 @@ $("#blogsubmit").click(function(){
 
 
 
-if (blog_pic=='') {
+  if (blog_pic=='') {
    alert("Please upload a blog picture");
 
  }
  else if(blog_category==''){
   alert("Please select a category");
 
- }
+}
 
- else if (blog_title=='') {
-   alert("Please fill blog title")
- }
+else if (blog_title=='') {
+ alert("Please fill blog title")
+}
 
-  else if (blog_short_desc=='') {
-   alert("Please provide a short blog description")
- }
- 
-
- else if (blog_desc=='') {
-   alert("Please fill blog description");
+else if (blog_short_desc=='') {
+ alert("Please provide a short blog description")
+}
 
 
+else if (blog_desc=='') {
+ alert("Please fill blog description");
 
- }
- 
+
+
+}
+
 
 else{
 

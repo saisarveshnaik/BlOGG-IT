@@ -20,9 +20,9 @@ if($sql->rowCount()>0){
 	foreach (($sql->fetchAll()) as $key => $row) 
 		
 
-	$_SESSION["email"] = $row['user_email'];
-    $_SESSION["user_name"] = $row['user_name'];
-    $_SESSION["username"] = $row['username'];
+		$_SESSION["email"] = $row['user_email'];
+	$_SESSION["user_name"] = $row['user_name'];
+	$_SESSION["username"] = $row['username'];
 	$_SESSION["password1"] = $row['password'];
 	$_SESSION["type_id"] = $row['user_type'];
 	$_SESSION["user_id"] = $row['user_id'];

@@ -10,165 +10,153 @@ error_reporting(0);
 
     <div style="margin-left:-190px;" id="sidebar-wrapper" >
         <ul class="sidebar-nav">
-           
+         
             <?php
-              
-               if (isset($_SESSION['user_name'])) {
-                 echo '<div style="margin-top:10%;">
-                 <img id="profile" src="'.$_SESSION["profile_pic"].'">
+            
+            if (isset($_SESSION['user_name'])) {
+               echo '<div style="margin-top:10%;">
+               <img id="profile" src="'.$_SESSION["profile_pic"].'">
 
-                 </div>';
-             }
-             else
-             {
-                echo '<div style="margin-top:10%;">
-                 <img id="profile" src="images/profile.png">
+               </div>';
+           }
+           else
+           {
+            echo '<div style="margin-top:10%;">
+            <img id="profile" src="images/profile.png">
 
-                 </div>';
+            </div>';
 
-             }
-             ?>
-                  
-           <br>
-
-
-<?php 
+        }
+        ?>
+        
+        <br>
 
 
-          if ($type_id=='0') {
+        <?php 
+
+
+        if ($type_id=='0') {
             echo'           <li>
-            <a style="color: white" href="dashboard.php">DASHBOARD</a>
-        </li>
-        <li>
-            <a style="color: white" href="add_blogs.php">ADD BLOGS</a>
-        </li>
-        <li>
-            <a style="color: white" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
-        </li>
-        <li>
-            <a style="color: white" href="reports.php">REPORTS</a>
-        </li>
+            <a style="color: white;" href="profile.php">YOUR PROFILE</a>
+            </li>
+            <li>
+            <a style="color: white;" href="add_blogs.php">ADD BLOGS</a>
+            </li>
+            <li>
+            <a style="color: white;" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
+            </li>
+            <li>
+            <a style="color: white;" href="reports.php">REPORTS</a>
+            </li>
 
-        <li>
-            <a style="color: white" href="#">EVENTS</a>
-        </li>
-        <li>
-            <a style="color: white" href="services.php">SERVICES</a>
-        </li>
-        <li>
-            <a style="color: white" href="about_us.php">ABOUT US</a>
-        </li>
-        <li>
-            <a style="color: white" href="contact_us.php">CONTACT US</a>
-        </li>
-    </ul>
-</div>
-<!-- /#sidebar-wrapper -->
+            <li>
+            <a style="color: white;" href="services.php">SERVICES</a>
+            </li>
+            <li>
+            <a style="color: white;" href="about_us.php">ABOUT US</a>
+            </li>
+            <li>
+            <a style="color: white;" href="contact_us.php">CONTACT US</a>
+            </li>
+            </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
 
-<!-- Page Content -->
-<div id="page-content-wrapper">
-    <div class="container-fluid">
-        <div class="row">
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+            <div class="container-fluid">
+            <div class="row">
             <div class="col-lg-12">
-                <h1></h1>
-                <p></p>
-                <p></p>
+            <h1></h1>
+            <p></p>
+            <p></p>
 
             </div>
-        </div>
-    </div>
-</div>
-<!-- /#page-content-wrapper -->
+            </div>
+            </div>
+            </div>
+            <!-- /#page-content-wrapper -->
 
-</div>
-';
+            </div>
+            ';
         }
         else if($type_id=='1'){
             echo'           <li>
-            <a style="color: white" href="dashboard.php">DASHBOARD</a>
-        </li>
-        <li>
-            <a style="color: white" href="add_blogs.php">ADD BLOGS</a>
-        </li>
-        <li>
-            <a style="color: white" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
-        </li>
-        <li>
-            <a style="color: white" href="#">EVENTS</a>
-        </li>
-        <li>
-            <a style="color: white" href="services.php">SERVICES</a>
+            <a style="color: white;" href="profile.php">YOUR PROFILE</a>
+            </li>
+            <li>
+            <a style="color: white;" href="add_blogs.php">ADD BLOGS</a>
+            </li>
+            <li>
+            <a style="color: white;" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
+            </li>
+            <li>
+            <a style="color: white;" href="services.php">SERVICES</a>
             
-        </li>
-        <li>
-            <a style="color: white" href="about_us">ABOUT US</a>
-        </li>
-        <li>
-            <a style="color: white" href="contact_us.php">CONTACT US</a>
-        </li>
-    </ul>
-</div>
-<!-- /#sidebar-wrapper -->
+            </li>
+            <li>
+            <a style="color: white;" href="about_us.php">ABOUT US</a>
+            </li>
+            <li>
+            <a style="color: white;" href="contact_us.php">CONTACT US</a>
+            </li>
+            </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
 
-<!-- Page Content -->
-<div id="page-content-wrapper">
-    <div class="container-fluid">
-        <div class="row">
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+            <div class="container-fluid">
+            <div class="row">
             <div class="col-lg-12">
-                <h1></h1>
-                <p></p>
-                <p></p>
+            <h1></h1>
+            <p></p>
+            <p></p>
 
             </div>
-        </div>
-    </div>
-</div>
-<!-- /#page-content-wrapper -->
+            </div>
+            </div>
+            </div>
+            <!-- /#page-content-wrapper -->
 
-</div>
-';
+            </div>
+            ';
 
         }
 
         else{
-            echo'           <li>
-            <a style="color: white" href="#">DASHBOARD</a>
-        </li>
-        
-        <li>
-            <a style="color: white" href="#">EVENTS</a>
-        </li>
-        <li>
-            <a style="color: white" href="services.php">SERVICES</a>
+            echo'
+            <li>
+            <a style="color: white;" href="services.php">SERVICES</a>
             
-        </li>
-        <li>
-            <a style="color: white" href="about_us.php">ABOUT US</a>
-        </li>
-        <li>
-            <a style="color: white" href="contact_us.php">CONTACT US</a>
-        </li>
-    </ul>
-</div>
-<!-- /#sidebar-wrapper -->
+            </li>
+            <li>
+            <a style="color: white;" href="about_us.php">ABOUT US</a>
+            </li>
+            <li>
+            <a style="color: white;" href="contact_us.php">CONTACT US</a>
+            </li>
+            </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
 
-<!-- Page Content -->
-<div id="page-content-wrapper">
-    <div class="container-fluid">
-        <div class="row">
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+            <div class="container-fluid">
+            <div class="row">
             <div class="col-lg-12">
-                <h1></h1>
-                <p></p>
-                <p></p>
+            <h1></h1>
+            <p></p>
+            <p></p>
 
             </div>
-        </div>
-    </div>
-</div>
-<!-- /#page-content-wrapper -->
+            </div>
+            </div>
+            </div>
+            <!-- /#page-content-wrapper -->
 
-</div>
-';
+            </div>
+            ';
         }
 
         ?>

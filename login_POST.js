@@ -28,7 +28,7 @@ $("#login").click(function(){
       if(res==20)
       {
         // window.location.href ="admin/production/index.php";
-        alert("Admin loign!");
+        alert("Admin login!");
         window.location.href ="index.php";
         
         
@@ -36,21 +36,21 @@ $("#login").click(function(){
       else if(res==23){
         
        
-        alert("User login!");
+        alert("Welcome back!");
 
-       window.location.href ="index.php";
+        window.location.href ="index.php";
 
-       
+        
 
 
-     }
-                    
-                    else{
-                      alert("invalid login");
-                    }
-                    
-                  }
-                }); 
+      }
+      
+      else{
+        alert("invalid login");
+      }
+      
+    }
+  }); 
  }
  
 
