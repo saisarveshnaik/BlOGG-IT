@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Blogging | CONTACT US</title>
+  <title>BLOGG IT! | CONTACT US</title>
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-  <script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
-
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <link rel="stylesheet" type="text/css" href="sidebar.css">
+  
+  <link href="css/all.css" rel="stylesheet"> 
 
+  <script defer src="js/all.js"></script>
 
 
 
 
 </head>
-<body>
+<body id="contact_us_body">
 
   <?php
   require 'header.php';
@@ -33,7 +34,7 @@
       <div class="col-md-3"></div>
       <div class="col-md-6 text-center">
 
-        <div class="container-fluid" style="padding:40px;background-color: #027ddb; margin-top: 50px;" id="about_card">
+        <div class="container-fluid" style="padding:40px;background-image: linear-gradient(to top, #367cff, #26c0f7); margin-top: 50px;" id="about_card">
 
           <div class="row" style="margin-left: 30px;margin-right: 30px;">
             
