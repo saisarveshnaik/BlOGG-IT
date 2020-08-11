@@ -9,7 +9,7 @@ error_reporting(0);
     <!-- Sidebar -->
 
     <div style="margin-left:-190px;" id="sidebar-wrapper" >
-        <ul class="sidebar-nav">
+        <ul class="sidebar-nav text-center" >
          
             <?php
             
@@ -37,26 +37,27 @@ error_reporting(0);
 
         if ($type_id=='0') {
             echo'           <li>
-            <a style="color: white;" href="profile.php">YOUR PROFILE</a>
+            <a style="color: white;margin-left:-18px" href="profile_user.php">YOUR PROFILE</a>
             </li>
             <li>
-            <a style="color: white;" href="add_blogs.php">ADD BLOGS</a>
+            <a style="color: white;margin-left:-18px" href="add_blogs.php">ADD BLOGS</a>
             </li>
             <li>
-            <a style="color: white;" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
+            <a style="color: white;margin-left:-18px" href="view_blogs/view_blogs_admin.php">ALL BLOGS</a>
             </li>
             <li>
-            <a style="color: white;" href="reports.php">REPORTS</a>
+            <a style="color: white;margin-left:-18px" href="messages.php">MESSAGES</a>
+            </li>
+            <li>
+            <a style="color: white;margin-left:-18px" href="reports.php">REPORTS</a>
             </li>
 
+            
             <li>
-            <a style="color: white;" href="services.php">SERVICES</a>
+            <a style="color: white;margin-left:-18px" href="about_us.php">ABOUT US</a>
             </li>
             <li>
-            <a style="color: white;" href="about_us.php">ABOUT US</a>
-            </li>
-            <li>
-            <a style="color: white;" href="contact_us.php">CONTACT US</a>
+            <a style="color: white;margin-left:-18px" href="contact_us.php">CONTACT US</a>
             </li>
             </ul>
             </div>
@@ -82,23 +83,20 @@ error_reporting(0);
         }
         else if($type_id=='1'){
             echo'           <li>
-            <a style="color: white;" href="profile.php">YOUR PROFILE</a>
+            <a style="color: white;margin-left:-18px" href="profile_user.php">YOUR PROFILE</a>
             </li>
             <li>
-            <a style="color: white;" href="add_blogs.php">ADD BLOGS</a>
+            <a style="color: white;margin-left:-18px" href="add_blogs.php">ADD BLOGS</a>
             </li>
             <li>
-            <a style="color: white;" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
+            <a style="color: white;margin-left:-18px" href="view_blogs/view_blogs.php">YOUR BLOGS</a>
             </li>
-            <li>
-            <a style="color: white;" href="services.php">SERVICES</a>
             
+            <li>
+            <a style="color: white;margin-left:-18px" href="about_us.php">ABOUT US</a>
             </li>
             <li>
-            <a style="color: white;" href="about_us.php">ABOUT US</a>
-            </li>
-            <li>
-            <a style="color: white;" href="contact_us.php">CONTACT US</a>
+            <a style="color: white;margin-left:-18px" href="contact_us.php">CONTACT US</a>
             </li>
             </ul>
             </div>
@@ -127,14 +125,10 @@ error_reporting(0);
         else{
             echo'
             <li>
-            <a style="color: white;" href="services.php">SERVICES</a>
-            
+            <a style="color: white;margin-left:-18px" href="about_us.php">ABOUT US</a>
             </li>
             <li>
-            <a style="color: white;" href="about_us.php">ABOUT US</a>
-            </li>
-            <li>
-            <a style="color: white;" href="contact_us.php">CONTACT US</a>
+            <a style="color: white;margin-left:-18px" href="contact_us.php">CONTACT US</a>
             </li>
             </ul>
             </div>
