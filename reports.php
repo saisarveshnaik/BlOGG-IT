@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Blogging | REPORTS</title>
+  <title>BLOGG IT! | REPORTS</title>
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-  <script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
-
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <link rel="stylesheet" type="text/css" href="sidebar.css">
+
+  <link href="css/all.css" rel="stylesheet"> 
+
+  <script defer src="js/all.js"></script>
 
 
 
@@ -39,6 +41,9 @@
 
       <div class="col-md-2"></div>
       <div class="col-md-10 text-center">
+
+        <h2>Reports</h2>
+        <hr/>
 
         <div class="container-fluid" style="padding: 40px;background-color: #ffffff" id="about_card">
           <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
