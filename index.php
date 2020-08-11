@@ -40,7 +40,7 @@
 
       <?php
       require 'connect.php';
-      $sql= $conn->prepare("SELECT * FROM blogs INNER JOIN users ON blogs.user_id=users.user_id order by blogs.created_date_time DESC");
+      $sql= $conn->prepare("SELECT * FROM blogs INNER JOIN users ON blogs.user_id=users.user_id WHERE blogs.status='0' order by blogs.created_date_time DESC");
       $sql->execute();
       $sql->setFetchMode(PDO::FETCH_ASSOC);
       if($sql->rowCount()>0){
