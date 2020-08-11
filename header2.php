@@ -7,38 +7,40 @@ require "session_script.php";
 <head>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-  <script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
-
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <link rel="stylesheet" type="text/css" href="sidebar.css">
+
+  <link href="css/all.css" rel="stylesheet"> 
+
+  <script defer src="js/all.js"></script>
 
 </head>
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #027ddb;" id="navbar_shadow">
-    <a class="navbar-brand" style="margin-left: 320px;" href="../index.php"><strong>BLOGGING</strong></a>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-image: linear-gradient(to left, #367cff, #26c0f7);" >
+    <a class="navbar-brand" style="margin-left: 60px;color: white;" href="../index.php"><strong>BLOGG IT!</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto" style="color: white;">
         <li class="nav-item active">
-          <a class="nav-link" href="../index.php">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="../index.php" style="color: white;margin-left:200px;">HOME <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="../about_us.php">ABOUT</a>
+          <a class="nav-link" href="../about_us.php" style="color: white;">ABOUT</a>
         </li>
         
         <li class="nav-item active">
-         <a class="nav-link" href="../contact_us.php">CONTACT US</a>
+         <a class="nav-link" href="../contact_us.php" style="color: white;">CONTACT US</a>
        </li>
 
        <li class="nav-item dropdown active">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
           CATEGORIES
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -55,12 +57,18 @@ require "session_script.php";
       <?php
       
       if (isset($_SESSION['user_name'])) {
-        echo '<h6 style="color:white;margin-top:10px;margin-right:5px;">  Welcome! '.$_SESSION["user_name"].' </h6> | <a href="../logout.php" class="btn btn-danger btn-circle" style="font-size:18px;margin-left:5px;"><i class="fas fa-power-off" ></i></a>';
+        echo '
+        <h6 style="color:white;margin-top:10px;margin-right:5px;">  Welcome! '.$_SESSION["user_name"].' </h6> | 
+        <a href="../logout.php" class="btn btn-light btn-circle" style="font-size:18px;margin-left:5px;color:#027ddb;border:1px solid #027ddb;"><i class="fas fa-power-off" style="margin-right:10px;background-color:#ffffff"></i>Logout</a>
+        ';
 
       }
       else{
-        echo '<button class="btn btn-outline-default"><a href="login.php" style="color:black">LOGIN </a></button>
-        <button class="btn btn-success margin-left"><a href="register.php" style="color:white">REGISTER</a></button>';
+        echo '
+        <a href="../login.php" class="btn btn-light margin-left" style="color:#ffffff;background-color:#367cff;border-radius:10px;width:150px;margin-right:16px">Login</a>
+
+        <a href="../register.php" class="btn btn-light" style="color:#027ddb;border:2px solid #027ddb;background-color:#ffffff;border-radius:10px;width:150px;">Register</a>';
+        
       }
       
       ?>
