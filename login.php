@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Blogging | LOGIN</title>
+	<title>BLOGG IT! | LOGIN</title>
 
  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -9,6 +9,10 @@
  <link rel="stylesheet" type="text/css" href="style.css">
 
  <link rel="stylesheet" type="text/css" href="sidebar.css">
+
+ <link href="css/all.css" rel="stylesheet"> 
+
+  <script defer src="js/all.js"></script>
 
  
 
@@ -27,8 +31,8 @@
 
 
   <section>
-    <div class="container" style="margin-right:300px;  padding: 10px;width: 800px" id="about_card" >
-      <div class="row" style="margin-top: 60px;">
+    <div class="container" style="margin-right:350px;  padding: 1px;width: 800px" id="about_card" >
+      <div class="row" style="margin-top: 40px;">
         <div class="col-md-3"></div>
 
 
@@ -36,12 +40,12 @@
           <h4 class="mb-4" align="center" style="color: #4c4c4c">LOGIN TO YOUR ACCOUNT</h4>
           <hr/>
           <div class="form-group">
-            <label >Username</label>
-            <input type="text" id="uname" class="form-control" placeholder="Your username" style="background-color: #fafafa;">
+            <label style="color: #4c4c4c">Username</label>
+            <input type="text" id="uname" class="form-control input_border" placeholder="Your username" style="background-color: #ffffff;">
           </div>
           <div class="form-group">
-            <label >Password</label>
-            <input type="password" id="pass" class="form-control" placeholder="Your password" style="background-color: #fafafa;">
+            <label style="color: #4c4c4c">Password</label>
+            <input type="password" id="pass" class="form-control input_border" placeholder="Your password" style="background-color: #ffffff;">
           </div> 
         </div>
 
