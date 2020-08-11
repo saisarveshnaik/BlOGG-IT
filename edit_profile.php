@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>BLOGG IT! | Edit Profile</title>
+	<title>Blogging | Edit Profile</title>
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -46,14 +46,22 @@
 
 
 
-						<div class="row">
+						<!-- <div class="row">
 						 <div class="col-md-12 text-center">
 						  <img src="images/profile.png" id="img" width="100" height="100"></img>
 						  <input type="hidden" name="image1" id="image1" disabled>
 						  <button style="width:200px; height:30px;border:none;margin-top: 10px;background-color: #ffffff;  color: #027ddb;" onclick="document.getElementById('profile_pic').click()">Change profile photo</button>
                           <input type='file' id="profile_pic" name="file" style="display:none">
 						 </div>	
-						</div>
+						</div> -->
+						<div class="row" style="">
+						<div class="col-md-12 text-center">
+							<img src="images/profile.png" id="img" width="100" height="100"></img>
+							<input type="hidden" name="image1" id="image1" disabled>
+							<button style="width:200px; height:30px;border:none;margin-top: 10px;background-color: #ffffff;  color: #027ddb;" onclick="document.getElementById('profile_pic').click()">Choose profile photo</button>
+							<input type='file' id="profile_pic" name="file" style="display:none">
+						</div>	
+					</div>
 
 
 
@@ -125,31 +133,31 @@
   <script src="js/bootstrap.min.js"></script>
 
   <script>
-			$('#profile_pic').change(function(){
+		$('#profile_pic').change(function(){
 
-				var fd = new FormData();
-				var files = $('#profile_pic')[0].files[0];
-				fd.append('file',files);
+			var fd = new FormData();
+			var files = $('#profile_pic')[0].files[0];
+			fd.append('file',files);
 
-				$.ajax({
-					url: 'upload.php',
-					type: 'post',
-					data: fd,
-					contentType: false,
-					processData: false,
-					success: function(response){
-						if(response != 0){
-							$("#img").attr("src",response); 
-							$('#image1').val(response);
-						$(".preview img").show(); // Display image element
-					}else{
-						alert('file not uploaded');
-					}
-				},
-			});
-			});
+			$.ajax({
+				url: 'upload.php',
+				type: 'post',
+				data: fd,
+				contentType: false,
+				processData: false,
+				success: function(response){
+					if(response != 0){
+						$("#img").attr("src",response); 
+						$('#image1').val(response);
+                    $(".preview img").show(); // Display image element
+                }else{
+                	alert('file not uploaded');
+                }
+            },
+        });
+		});
 
-		</script>
+	</script>
 		
 		
 		
@@ -165,9 +173,12 @@
 		var email=$("#email").val();
 		var address=$("#address").val();
 		var password=$("#password").val();
+		var profile_pic=$("#image1").val();
+			
 
 
-		var datastr='password='+password+'&name='+name+'&username='+username+'&email='+email+'&address='+address;
+
+		var datastr='password='+password+'&name='+name+'&username='+username+'&email='+email+'&address='+address+'&profile_pic='+profile_pic;
 
 
 
@@ -212,15 +223,17 @@
 		success: function(res){
 		if(res==1)
 		{
-			alert("Profile Edited Successfully");
 			window.location.href="logout.php";
+			alert("Profile Edited Successfully");
+			
 			window.location.href="login.php";
+
 
 		}
 		else{
 
 
-		alert("Error updating profile information");
+		alert("Error");
 
 
 		}
