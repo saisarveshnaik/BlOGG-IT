@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Blogging | ABOUT US</title>
+  <title>BLOGG IT! | ABOUT US</title>
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-  <script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <link rel="stylesheet" type="text/css" href="sidebar.css">
+
+   <link href="css/all.css" rel="stylesheet"> 
+
+  <script defer src="js/all.js"></script>
 
 
 
@@ -27,27 +30,16 @@
 
 
 
-
-
-
-  <section>
-    <div class="container" style="margin-top: 50px">
-
-     <div class="row">
-      <div class="col-md-12 text-center">
-        <h1 style="color: #464646">ABOUT US</h1>
-      </div>
-    </div> 
-  </div>
-</section>
-
-
 <!----------------------------------------------------------------------------------------------------->
 
 
-<section>
+<div class="container-fluid" style="background-image: linear-gradient(to left, #367cff, #26c0f7);">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center"></div>
+
   <div class="container">
-    <div class="row" style="margin-top: 80px;">
+    <div class="row" style="margin-top: 140px;margin-left: 100px;margin-bottom: 200px">
       <div class="col-md-3 text-center">
         <div class="card" style="width: 15rem;" id="about_us_card">
           <img class="card-img-top" style="margin-top: 5px;"  src="profile_pictures/viru.jpeg" alt="Profile image" id="about_us_img">
@@ -151,7 +143,14 @@
   
 </div>
 </div>
-</section>
+
+
+
+
+
+    <div class="col-md-1"></div>
+  </div>
+</div>
 
 
 
