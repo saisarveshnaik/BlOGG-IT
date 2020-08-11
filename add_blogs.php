@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Blogging | Add Blogs</title>
+	<title>BLOGG IT! | Add Blogs</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
-
 	<link rel="stylesheet" type="text/css" href="sidebar.css">
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link href="css/all.css" rel="stylesheet"> 
+
+  <script defer src="js/all.js"></script>
 </head>
 <body>
 
