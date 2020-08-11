@@ -40,12 +40,12 @@
               <ul class="list-unstyled">
                 <li>
                   <p>
-                    <a  href="#!">PROJECTS</a>
+                    <a  href="http://navodayfoundation.com/">PROJECT</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a  href="#!">ABOUT US</a>
+                    <a  href="../about_us.php">ABOUT US</a>
                   </p>
                 </li>
                 <li>
