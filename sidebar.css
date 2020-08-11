@@ -13,16 +13,15 @@
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 250px;
+    left: 190px;
     width: 0;
-    height: 85%;
+    height: 100%;
     overflow-y: auto;
-    background: #027ddb;   /*SIDEBAR COLOR*/
+    background-image: linear-gradient(to top, #367cff, #26c0f7);   /*sidebar gradient*/
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #wrapper.toggled #sidebar-wrapper {
