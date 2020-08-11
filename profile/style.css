@@ -1,13 +1,58 @@
+
+.input_border{
+
+  border: none;
+  border-bottom: 1px solid grey;
+ border-radius: 0px;
+
+}
+
+
 #padding_zero{
   padding: 0px;
 }
 
+#navbar_shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+  /*background-image: url('images/solid.png');
+  background-attachment: fixed ;*/
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 10px;
+  margin-bottom:10px;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+
+
+footer{
+  margin-top: 20%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+
+#contact_us {
+  background-image: url('images/contact_us.jpg');
+  background-attachment: fixed ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
 
 
 
@@ -22,6 +67,12 @@ hr {
   margin-right: 200px;
 
   }*/
+  .navbarText{
+
+    color:white;
+
+  }
+
 
   #sidebartext{
    color : white;
@@ -34,27 +85,18 @@ hr {
  }
 
 
- body {
-  background-image: url('images/solid.png');
-  background-attachment: fixed ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
-footer{
-  margin-top: 20%;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
 
-.blogTextarea{
-	height: 450px;
+ .blogTextarea{
+   height: 450px;
+   resize: none;
+ }
+
+ .contactTextarea{
+  height: 180px;
   resize: none;
 }
+
 
 
 #formsubmit{
@@ -75,6 +117,13 @@ footer{
 }
 
 
+.text_shadow{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
 #profile_page_pic{
   display: block;
   margin-left: auto;
@@ -87,6 +136,18 @@ footer{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#edit_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid grey;
+  
+}
+
 #img{
   display: block;
   margin-left: auto;
@@ -95,20 +156,20 @@ footer{
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #4c4c4c;
+  
 }
 
 #img1{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+/*  margin-left: auto;
+  margin-right: auto;*/
   width: 300px;
   height: 200px;
   object-fit: cover;
-  border-radius: 5%;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1%;
+  border: 1px solid #e2e2e2;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 #profile{
@@ -119,8 +180,8 @@ footer{
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border:2px solid white;
+ /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 
@@ -129,12 +190,12 @@ footer{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:500px;
+  width:100%;
   height:300px;
   object-fit: cover;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  padding: 10px;
+  border-radius: 15px;
+  
 
 }
 
@@ -146,8 +207,7 @@ footer{
   height: 120px;
   object-fit: cover;
   border-radius: 5%;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 
 }
 
@@ -158,20 +218,20 @@ footer{
   margin-left: auto;
   margin-right: auto;
 
-  height: 100%%;
+  height: 220px;
   width: 100%;
   object-fit: cover;
-  border-radius: 1%;
+  border-radius: 7px;
 }
 
 #profile_blogs_image{
  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 315px;
-  height: 315px;
-  object-fit: cover;
-  border: 1px solid black;
+ margin-left: auto;
+ margin-right: auto;
+ width: 315px;
+ height: 315px;
+ object-fit: cover;
+ border: 1px solid black;
 }
 
 #about_us_img{
@@ -186,10 +246,28 @@ footer{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#about_card{
+#about_us_card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #17a2b8; 
+  background-color: #ffffff; 
 }
+
+
+#about_card{
+  border-radius: 2px;
+  background-color: #ffffff;
+  border:1px solid #b2b2b2;
+  
+}
+
+
+
+#index_card{
+
+  box-shadow: 0 400px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #49659f; 
+}
+
+
 
 
 #container_shadow{
@@ -205,7 +283,6 @@ footer{
 
 
 .roundShadow{
-  border: 1px solid black;
   border-radius: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -251,7 +328,7 @@ footer{
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 
@@ -267,13 +344,14 @@ footer{
 }
 
 .btn-circle {
-  width: 38px;
-  height: 38px;
+  width: 150px;
+  height: auto;
   text-align: center;
   padding: 6px 0;
   font-size: 12px;
   line-height: 1.42;
-  border-radius: 30px;
+  border-radius: 10px;
+  
 }
 
 
@@ -286,27 +364,26 @@ footer{
 /*FOR IMPLEMENTING SEND BUTTON INTO THE INPUT*/
 
 #commentDiv{
-  /* This bit sets up the horizontal layout */
+  
   display:flex;
   flex-direction:row;
   outline: none;
-  /* This bit draws the box around it */
+  
   
 
-  /* I've used padding so you can see the edges of the elements. */
+  
   padding:2px;
 }
 
 .commentfix{
  flex-grow:2;
- /* And hide the input's outline, so the form looks like the outline */
+ 
  border:none;
  outline: none;
 }
 
 .commentfix:focus {
-  /* removing the input focus blue box. Put this on the form if you like. */
-
+ 
   outline: none;
 }
 

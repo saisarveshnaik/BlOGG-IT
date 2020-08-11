@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Blogging | UPDATE BLOG</title>
+	<title>BLOGG IT! | UPDATE BLOG</title>
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
-	<script src="https://kit.fontawesome.com/05315665b2.js" crossorigin="anonymous"></script>
-
 	<link rel="stylesheet" type="text/css" href="../style.css">
 
 	<link rel="stylesheet" type="text/css" href="../sidebar.css">
+
+	 <link href="../css/all.css" rel="stylesheet"> 
+
+     <script defer src="../js/all.js"></script>
 
 
 
@@ -35,16 +37,9 @@
 			<form method="post" action="" enctype="multipart/form-data">
 
 				<div class="row">
-					<!-- <div class="col-md-2"></div> -->
-					<div class="col-md-12 text-center">
-						<h1 style="color: white">Update your blog</h1>
-					</div>
-				</div>
-
-
-				<div class="row">
 					<div class="col-md-3"></div>
-					<div class="col-md-6 text-center" style="margin-top: 50px">
+					<div class="col-md-7 text-center">
+						<h2>Update Blog</h2>
 
 
 						<?php
@@ -61,7 +56,7 @@
 
 								<div class="item form-group">
 								<input type=button id="blog_id" style="display:none;" value="'.$blog_id.'">
-								<input type="text"  required="required" class="form-control " id="blog_title" name="productname" value="'.$row['blog_title'].'">
+								<input style="margin-top:40px;" type="text"  required="required" class="form-control " id="blog_title" name="productname" value="'.$row['blog_title'].'">
 								</div>
 								<div class="item form-group">
 								<textarea class="form-control blogTextarea" type="text" name="productnote"  id="blog_desc"> '.$row['blog_desc'].' </textarea>
@@ -77,26 +72,26 @@
 					<div class="col-md-3"></div>
 				</div>
 
-				<div class="row">
+				<div class="row" style="margin-left: 90px;">
 					<div class="col-md-3"></div>
 					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="item form-group" style="text-align: right">
+						    <div class="row">
+							<div class="col-md-4 text-center">
+								<div class="item form-group">
 									<button class="btn btn-danger blogButtons" type="button"><a style="color:white" href="view_blogs.php">Cancel</a></button>
 								</div>
 							</div>
-							<div class="col-md-4">
-								<div class="item form-group" style="text-align: center;">
+							<div class="col-md-4 text-center">
+								<div class="item form-group">
 									<button class="btn btn-primary blogButtons" type="reset">Reset</button>
 								</div>
 							</div>
-							<div class="col-md-4" >
-								<div class="item form-group" style="text-align: left;">
+							<div class="col-md-4 text-center" >
+								<div class="item form-group">
 									<button type="button" id="blogsubmit" class="btn btn-success blogButtons">Update</button>
 								</div>
 							</div>
-						</div>
+					    </div>
 					</div>
 					<div class="col-md-3"></div>
 				</div>
@@ -131,7 +126,7 @@
 
 
 	<?php
-	require '../footer.php';
+	require '../footer2.php';
 	?>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

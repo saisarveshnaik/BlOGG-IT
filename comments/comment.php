@@ -5,7 +5,7 @@ $sql->execute();
 $sql->setFetchMode(PDO::FETCH_ASSOC);
 if($sql->rowCount()>0){
   foreach (($sql->fetchAll()) as $key => $row) {
-    echo'<hr/>';
+    echo'';
     
     $sql= $conn->prepare("SELECT * FROM users where user_id='".$row['user_id']."'");
     $sql->execute();
